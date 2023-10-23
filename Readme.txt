@@ -14,4 +14,4 @@ Réécriture du code pour qu'il soit viable dans le temps et plus facile à chan
 
 
 pattern observer est un des deux plus utilisés (et facile d'implémentation)
-pattern à utiliser (car java) : Prototype
+pattern à utiliser (car java) : Prototype (= héritage)
