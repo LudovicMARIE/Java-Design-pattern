@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        Eleve eleve = new Eleve(1,"nom","prenom");
-        System.out.print(eleve.getNomEleve());
-        System.out.print(eleve.getPrenomEleve());
-        System.out.print(eleve.getIdEleve());
+        Personne personne = new Personne(1,"nom","prenom");
+        System.out.print(personne.getNomPersonne());
+        System.out.print(personne.getPrenomPersonne());
+        System.out.print(personne.getIdPersonne());
     }
 }

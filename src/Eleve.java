@@ -1,33 +1,14 @@
-public class Eleve {
+import java.util.Hashtable;
 
-    private final int idEleve;
-    private String nomEleve;
-    private String prenomEleve;
+public class Eleve extends Personne{
 
-    public Eleve(int id, String nom, String prenom){
-        this.idEleve = id;
-        this.nomEleve = nom;
-        this.prenomEleve = prenom;
-    }
-    public int getIdEleve() {
-        return idEleve;
+    private Hashtable<Cours, Integer> notes = new Hashtable<String, Integer>();
+    public Eleve(int id, String nom, String prenom) {
+        super(id, nom, prenom);
     }
 
-    public String getNomEleve() {
-        return nomEleve;
+    public Eleve(int id, String nom, String prenom, Hashtable<String, Integer> notes) {
+        super(id, nom, prenom);
+        this.notes = notes;
     }
-
-    public void setNomEleve(String nomEleve) {
-        this.nomEleve = nomEleve;
-    }
-
-    public String getPrenomEleve() {
-        return prenomEleve;
-    }
-
-    public void setPrenomEleve(String prenomEleve) {
-        this.prenomEleve = prenomEleve;
-    }
-
-
 }
