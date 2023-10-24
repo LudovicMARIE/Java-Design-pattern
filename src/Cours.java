@@ -65,7 +65,7 @@ public class Cours {
 
 
     public String toString(){
-        return "Cours n°"+idCours+"|"+nomCours+"|"+dateDebut+"|"+dateFin+"|"+matiereCours+"|"+salleCours.getNomSalle();
+        return "Cours n°"+idCours+"|"+nomCours+"|"+dateDebut+"|"+dateFin+"|"+matiereCours+"|"+salleCours.getNomSalle()+"|"+professeurCours;
     }
 
     public Professeur getProfesseurCours() {

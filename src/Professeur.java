@@ -15,5 +15,9 @@ public class Professeur extends Personne{
         eleve.nouvelleNote(matiere, note);
     }
 
+    public String toString(){
+        return getPrenomPersonne()+" "+getNomPersonne();
+    }
+
 
 }

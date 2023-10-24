@@ -3,11 +3,14 @@ import java.util.Hashtable;
 public class Eleve extends Personne{
 
     private Hashtable<Matiere, Integer> notes;
+    boolean isDP;
 
-    public Eleve(int id, String nom, String prenom) {
+    public Eleve(int id, String nom, String prenom, boolean isDp) {
         super(id, nom, prenom);
         this.notes = new Hashtable<Matiere, Integer>();
+        this.isDP = isDp;
     }
+
     public Eleve(int id, String nom, String prenom, Hashtable<Matiere, Integer> notes) {
         super(id, nom, prenom);
         this.notes = notes;
